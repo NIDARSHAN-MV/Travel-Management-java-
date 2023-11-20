@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles/style.css">
+</head>
+<body>
+    <header>
+    <div class="background-image"></div>
+    <div class="logo">
+        Travel
+    </div>
+    <button class="login-btn">Help</button>
+    <warpper>
+        <!-- <h1 class="heading">welcome to Travel-j</h1>
+        <div class="welcome-txt">
+            <p>
+                This web application is a powerful tool designed to streamline 
+                and centralize the management of travel-related information. 
+                It serves as a one-stop solution for travelers, travel managers, 
+                and organizations, allowing them to efficiently plan, track, and optimize 
+                various aspects of their travel activities. 
+            </p>
+        </div> -->
+        <div class="form-box-login">
+            <h2>Register Details</h2>
+            <form action="/register" method="POST">
+                <div class="input-box1">
+                    <span class="icon"><ion-icon name="person"></ion-icon>
+                    </span>
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-box2">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <input type="email" name="email" placeholder="Enter your email id" required>
+                    <label>Email Id</label>
+                </div>
+                <div class="input-box3">
+                    <span class="icon"><ion-icon name="calendar"></ion-icon>
+                    </span>
+                    <input type="date" name="date" placeholder="Enter travel date" required>
+                    <label>Date</label>
+                </div>
+                <div class="input-box4">
+                    <span class="icon"><ion-icon name="airplane"></ion-icon>
+                    </span>
+                    <span class="icon"><ion-icon name="train"></ion-icon>
+
+                    <input type="text" name="mode" placeholder="Enter preffered transport" required>
+                    <label>Mode</label>
+                </div>
+                <button type="submit" class="reg-btn">Register</button>
+            </form>
+        </div>
+        <div class="display-box">
+            <!-- <h4>R</h4> -->
+            <form action="/diplay-id">
+                <div class="input-box-b6">
+                    <label> Your Travel Id:</label>
+                </div>
+                <button type="button" class="bk-btn">Back</button>
+            </form>
+        </div>
+    </warpper>
+    
+    <nav>
+        <div class="menu">
+            <a href="#" class="home-page">Home</a>
+            <a href="/bus" class="bus-page">Bus</a>
+            <a href="/train" class="train-page">Train</a>
+            <a href="/flight" class="flight-page">Flight</a>
+            <a href="/manager" class="adv-page">Manager</a>
+        </div>
+    </nav>
+    <section class="title-txt">
+        <br>
+    </section>
+    </header>
+    <script src="/static/script/script.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager Page</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles/managerStyle.css">
+</head>
+<body>
+    
+    <header>
+    <div class="background-image"></div>
+    <div class="logo">
+        Travel
+    </div>
+    <button class="login-btn">Help</button>
+    <warpper>
+        <div class="display-box">
+            <!-- <h4>R</h4> -->
+            <form action="/manager-start-bus">
+                <button type="submit"  class="bus-details">Show Bus details</button>
+            </form>
+            <form action="/manager-start-train">
+                <button type="submit"  class="train-details">Show Train details</button>
+            </form>
+            <form action="/manager-start-flight">
+                <button type="submit"  class="flight-details">Show Flight details</button>
+            </form>
+        </div>
+    </warpper>
+    
+    <nav>
+        <div class="menu">
+            <a href="/" class="home-page">Home</a>
+            <a href="/bus" class="bus-page">Bus</a>
+            <a href="/train" class="train-page">Train</a>
+            <a href="/flight" class="flight-page">Flight</a>
+            <a href="" class="manager-page">Manager</a>
+        </div>
+    </nav>
+    </header>
+    <!-- <script src="/static/script/d-script.js"></script> -->
+    <script>
+        function setInputValue(route) {
+            const inputBoxValue = document.getElementById('travel_id').value;
+            const form = document.getElementById('inputForm');
+            form.action = route;
+            form.submit();
+        }
+    </script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</body>
+</html>

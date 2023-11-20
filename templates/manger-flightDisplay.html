@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Details</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles/manager-trainStyle.css">
+</head>
+<body>
+    
+    <header>
+    <div class="background-image"></div>
+    <div class="logo">
+        Travel
+    </div>
+    <button class="login-btn">Help</button>
+    <warpper>
+        <div class="display-box">
+            <!-- <h4>R</h4> -->
+            <form action="/manager-flight" method="post">
+                <label class="tid">Enter Your Travel ID</label>
+                <input type="text" name="travel_id" class="input-tid" placeholder="TTM18....." required>
+                <div class="id-content1">
+                    <label> Age: {{age}}</label>
+                </div>
+                <div class="id-content2">
+                    <label> Flight Code: {{ train }} </label>
+                </div>
+                <div class="id-content3">
+                    <label> Class : {{ seat }} </label>
+                </div>
+                <div class="id-content4">
+                    <label>Seat Number: {{ sno }}</label>
+                </div>
+                <div class="id-content5">
+                    <label>Travel Date: {{ t_date }} </label>
+                </div>
+                <div class="id-content6">
+                    <label>Departure Time: {{ d_time }}</label>
+                </div>
+                <div class="id-content7">
+                    <label>Departure Port: {{ d_place }} </label>
+                </div>
+                <div class="id-content8">
+                    <label> Flight Type: {{ t_type }}</label>
+                </div>
+                <div class="id-content9">
+                    <label> Coach Type: {{ c_type }}</label>
+                </div> 
+                <div class="id-content10">
+                    <label> Ticket Price: {{ t_price }}</label>
+                </div>
+                <div class="id-content11">
+                    <label> Food Option: {{ from_place }}</label>
+                </div>
+                <div class="id-content12">
+                    <label> To Place: {{ to_place }}</label>
+                </div>
+                <div class="id-content13">
+                    <label> Booking date: {{ bk_date }}</label>
+                </div>
+                <div class="id-content14">
+                    <label> PNR Number: {{ ts }}</label>
+                </div>
+                <div class="id-content15">
+                    <label> Travel ID: {{ tid }}</label>
+                </div>
+                <div class="id-note">
+                    <label>Note: Acces your data with Your travel ID</label>
+                </div>
+                <button type="submit" class="get-btn">Fetch Data</button>
+            </form>
+            <form action="/manager">
+                <button type="submit" class="bk-btn">Back</button>
+            </form>
+        </div>
+    </warpper>
+    
+    <nav>
+        <div class="menu">
+            <a href="/" class="home-page">Home</a>
+            <a href="/bus" class="bus-page">Bus</a>
+            <a href="/train" class="train-page">Train</a>
+            <a href="/flight" class="flight-page">Flight</a>
+            <a href="/manager" class="manager-page">Manager</a>
+        </div>
+    </nav>
+    </header>
+    <script src="/static/script/d-script.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</body>
+</html>
